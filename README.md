@@ -11,8 +11,8 @@ O sistema apresenta os seguintes componentes:
 ## Sofware
 O sistema é dividido em duas partes:
 
-## Leitura do Tabuleiro
+### Leitura do Tabuleiro
 A leitura é reaizada pelo conjunto de MUX e as entradas são convertidas de valores analógicos para a representação em BitBoard.
 
-## Comunicação
+### Comunicação
   Em construção...
