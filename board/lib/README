@@ -1,46 +1,39 @@
+# lib
 
-This directory is intended for project specific (private) libraries.
-PlatformIO will compile them to static libraries and link into executable file.
+Arquivos que compõe a implementação do projeto
 
-The source code of each library should be placed in a an own separate directory
-("lib/your_library_name/[here are source files]").
+## mux
+Implementação do multiplexador
 
-For example, see a structure of the following two libraries `Foo` and `Bar`:
-
-|--lib
-|  |
-|  |--Bar
-|  |  |--docs
-|  |  |--examples
-|  |  |--src
-|  |     |- Bar.c
-|  |     |- Bar.h
-|  |  |- library.json (optional, custom build options, etc) https://docs.platformio.org/page/librarymanager/config.html
-|  |
-|  |--Foo
-|  |  |- Foo.c
-|  |  |- Foo.h
-|  |
-|  |- README --> THIS FILE
-|
-|- platformio.ini
-|--src
-   |- main.c
-
-and a contents of `src/main.c`:
-```
-#include <Foo.h>
-#include <Bar.h>
-
-int main (void)
-{
-  ...
-}
-
+```cpp
+const int seletor[];
 ```
 
-PlatformIO Library Dependency Finder will find automatically dependent
-libraries scanning project source files.
+- Lista de seletores, vale salientar que a notação é little endian.
 
-More information about PlatformIO Library Dependency Finder
-- https://docs.platformio.org/page/librarymanager/ldf.html
+```cpp
+const int analog_reader_pin;
+```
+
+- Leitura do pino de resposta pós chaveamento do MUX.
+
+```cpp
+void buildSystem(void);
+```
+
+- Builda o MUX.
+
+```cpp
+int returnPiece(int value_pin_seletor);
+```
+
+- Retorna o valor do chaveamento. Recebe como argumento a posição da casa e retorna o valor analógico da peça
+
+## piece
+Descreve a peça em código.
+
+```cpp
+char analogToRepresentationPiece(int analog_value_piece);
+```
+
+- Retorna o valor da peça na representação do projeto(char ou bitboard) e recebe como argumento o valor analógico referente à peça.
