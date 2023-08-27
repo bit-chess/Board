@@ -37,3 +37,7 @@ char analogToRepresentationPiece(int analog_value_piece);
 ```
 
 - Retorna o valor da peça na representação do projeto(char ou bitboard) e recebe como argumento o valor analógico referente à peça.
+
+## communication
+
+Comunicação P2P entre a ESP32 e o Desktop.
