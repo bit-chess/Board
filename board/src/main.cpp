@@ -2,11 +2,17 @@
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <mux.h>
-#include <communication.h>
+
+const char *ssid_ = "ESP32_P2P";
+const char *password_ = "password";
+WiFiServer server(12345);
 
 void setup(void) {
   Serial.begin(11520);
   buildSystem();
+
+  WiFi.softAP(ssid_, password_);
+  server.begin();
 }
 
 void loop(void) {
@@ -31,7 +37,7 @@ void loop(void) {
     }
     
     Serial.println("Conexão perdida");
-    
+
   }
 
 }
