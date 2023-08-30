@@ -5,51 +5,51 @@ char analogToRepresentationPiece(int analog_value_piece){
     char ans;
     switch (analog_value_piece){
         case ROOK_WHITE:
-            ans = 'x';
+            ans = 'T';
             break;
 
         case KNIGHT_WHITE:
-            ans = 'x';
+            ans = 'C';
             break;
 
         case BISHOP_WHITE:
-            ans = 'x';
+            ans = 'B';
             break;
 
         case KING_WHITE:
-            ans = 'x';
+            ans = 'K';
             break;
 
         case QUEEN_WHITE:
-            ans = 'x';
+            ans = 'Q';
             break;
 
         case PAWN_WHITE:
-            ans = 'x';
+            ans = 'P';
             break;
 
         case ROOK_BLACK:
-            ans = 'x';
+            ans = 't';
             break;
 
         case KNIGHT_BLACK:
-            ans = 'x';
+            ans = 'c';
             break;
 
         case BISHOP_BLACK:
-            ans = 'x';
+            ans = 'b';
             break;
 
         case KING_BLACK:
-            ans = 'x';
+            ans = 'k';
             break;
 
         case QUEEN_BLACK:
-            ans = 'x';
+            ans = 'q';
             break;
 
         case PAWN_BLACK:
-            ans = 'x';
+            ans = 'p';
             break;
 
         default:
