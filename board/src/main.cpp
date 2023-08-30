@@ -17,27 +17,29 @@ void setup(void) {
 
 void loop(void) {
   
-  WiFiClient client = server.available();
+  // WiFiClient client = server.available();
 
-  if(client) {
+  // if(client) {
       
-    Serial.println("Conexão estabelecida com o Desktop");
+  //   Serial.println("Conexão estabelecida com o Desktop");
     
-    while (client.connected()) {
-      if (client.available()) {
-        String message = client.readStringUntil('\n'); // movimento na notação do xadrez
-        Serial.println("Received: " + message);
+  //   while (client.connected()) {
+  //     if (client.available()) {
+  //       String message = client.readStringUntil('\n'); // movimento na notação do xadrez
+  //       Serial.println("Received: " + message);
 
-        // Process the message as needed
+  //       // Process the message as needed
 
-        // envia
-        client.print("Message received: " + message);
-        client.flush();
-      }
-    }
+  //       // envia
+  //       client.print("Message received: " + message);
+  //       client.flush();
+  //     }
+  //   }
     
-    Serial.println("Conexão perdida");
+  //   Serial.println("Conexão perdida");
 
-  }
+  // }
+
+  Serial.println(analogRead(39));
 
 }
