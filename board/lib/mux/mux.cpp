@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #include <mux.h>
-#include "../piece/piece.h"
 
 void buildSystem(void){
     for(int i=0;i<QTD_MUX;i++) for(int j=0;j<QTD_MUX;j++) pinMode(seletor[i][j], OUTPUT);
