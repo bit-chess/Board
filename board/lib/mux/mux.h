@@ -9,6 +9,5 @@ const int SIG = 43; //Pino de leitura analógica
 
 void buildSystem(void);
 int returnPiece(int value_pin_seletor);
-char **updateImageBoard(void);
 
 #endif

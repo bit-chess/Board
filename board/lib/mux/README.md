@@ -15,6 +15,7 @@ O sistema compõe 4 mux 16:4 e cada mux realiza a leitura de duas linhas.
 
 ## software
 
+### mux
 ```cpp
 const int seletor[][] = {{}}; //Seletores. Notação: LITTLE ENDIAN
 ```
@@ -38,6 +39,16 @@ int returnPiece(int value_pin_seletor);
 ```
 
 - Retorna a peça informando o valor analógico.
+
+### piece
+
+```cpp
+char analogToRepresentationPiece(int analog_value_piece)
+```
+
+- Informa a peça pelo valor analógico.
+
+### image_board
 
 ```cpp
 char **updateImageBoard(void);
