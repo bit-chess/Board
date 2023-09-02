@@ -22,7 +22,7 @@ const int seletor[][] = {{}}; //Seletores. Notação: LITTLE ENDIAN
 - Conjuntos de seletores.
 
 ```cpp
-const int analog_reader_pin = 43; //Pino de leitura analógica
+const int SIG; //Pino de leitura analógica
 ```
 
 - SIG.
