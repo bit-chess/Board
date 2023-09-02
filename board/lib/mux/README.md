@@ -40,7 +40,7 @@ int returnPiece(int value_pin_seletor);
 - Retorna a peça informando o valor analógico.
 
 ```cpp
-void updateImageBoard(void);
+char **updateImageBoard(void);
 ```
 
-- Atualiza a Imagem do tabuleiro.
+- Atualiza e retorna a Imagem do tabuleiro.
