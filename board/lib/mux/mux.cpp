@@ -3,14 +3,16 @@
 
 void buildSystem(void){
     for(int i=0;i<QTD_MUX;i++) for(int j=0;j<QTD_MUX;j++) pinMode(seletor[i][j], OUTPUT);
+    for(int i=0;i<QTD_MUX;i++) pinMode(which_mux[i], OUTPUT);
+    pinMode(SIG, INPUT);
 }
 
 int returnPiece(int value_pin_seletor){
     //setando os seletores do mux
-    for(int i=0;i<QTD_MUX;i++) for(int j=0;j<QTD_MUX;j++) digitalWrite(seletor[i][j], ((value_pin_seletor >> i) & 1));
+    for(int i=0;i<QTD_MUX;i++) for(int j=0;j<QTD_MUX;j++) digitalWrite(seletor[i][j], ((value_pin_seletor >> i) & 1) ? HIGH : LOW);
     int enable_idx = ((value_pin_seletor >> 4) & 1) + 2*(((value_pin_seletor >> 5) & 1) );    
 
-    //setando qial o mux
+    //setando qual o mux
     switch (enable_idx)
     {
         case 0:
