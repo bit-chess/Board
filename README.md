@@ -4,6 +4,7 @@ Software referente ao tabuleiro fisico
 ## Hardware
 O sistema apresenta os seguintes componentes:
 
+- (x1) Arduino Mega
 - (x1) ESP32;
 - (x4) MUX CD74HC4067;
 - (x1) Tabuleiro de Madeira;
