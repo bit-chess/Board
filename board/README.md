@@ -1,5 +1,11 @@
 # Board
 
-O sistema é composto por uma ESP por permitir uma facilidade maior com conectividade e maior resolução na leitura analógica.
+O sistema é composto por um Arduino Mega e uma ESP.
 
 ![](doc/esp.png)
+
+- ESP32: Pinos
+
+![](doc/mega.png)
+
+- ARDUINO MEGA: Pinos
