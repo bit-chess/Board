@@ -1,5 +1,5 @@
-#ifndef RXTX_RCV
-#define RXTX_RCV
+#ifndef RXTX_RCV_H
+#define RXTX_RCV_H
 
 typedef struct{
     char board[8][8];
