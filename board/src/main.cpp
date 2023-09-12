@@ -4,10 +4,10 @@
 #include <image_board.h>
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   buildSystem();
 }
 
 void loop() {
-  char **board = updateImageBoard();
+  char **board = updateImageBoard(1);
 }

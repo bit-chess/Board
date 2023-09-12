@@ -13,7 +13,34 @@ char **updateImageBoard(void){ //passar ponteiro para a matriz bit-board
         for(int j=0;j<8;j++) {
             board[i][j] = analogToRepresentationPiece(returnPiece(counter));
             counter++;
-            delay(50);
+            delay(10);
+        }
+    }
+
+    Serial.println("--------\nImage board: ");
+    for(int i=0;i<8;i++) {
+        for(int j=0;j<8;j++) {
+            Serial.print(board[i][j]);
+        }
+        Serial.println();
+    }
+    Serial.println("--------\n\n");
+    
+    return board;
+}
+
+char **updateImageBoard(int until){ //passar ponteiro para a matriz bit-board
+    char **board = new char*[8];
+    for (int i=0;i<8;i++) board[i] = new char[8];
+    
+    int counter = 0;
+
+    for(int i=0;i<8;i++) {
+        for(int j=0;j<8;j++) {
+            if(counter < until) board[i][j] = analogToRepresentationPiece(returnPiece(counter));
+            else board[i][j] = 'x';
+            counter++;
+            delay(5);
         }
     }
 
