@@ -1,5 +1,5 @@
-#include <image_board.h>
 #include <Arduino.h>
+#include <image_board.h>
 #include "../piece/piece.h"
 #include "../mux/mux.h"
 #include "../data_board/board.h"
@@ -12,7 +12,7 @@ image_board updateImageBoard(void){ //passar ponteiro para a matriz bit-board
         for(int j=0;j<8;j++) {
             board.board[i][j] = analogToRepresentationPiece(returnPiece(counter));
             counter++;
-            delay(10);
+            delay(5);
         }
     }
 
