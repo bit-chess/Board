@@ -12,5 +12,5 @@ void setup() {
 
 void loop() {
   digitalWrite(13, !digitalRead(13));
-  send_board(updateImageBoard(1));
+  send_board(updateImageBoard(2));
 }

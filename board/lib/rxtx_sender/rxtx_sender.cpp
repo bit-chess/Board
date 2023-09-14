@@ -16,5 +16,5 @@ image_board build_packet(char **board){
 void send_board(image_board board){
     Serial.write((uint8_t*)&board, sizeof(board));
     Serial.flush();
-    delay(100);
+
 }
