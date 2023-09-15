@@ -49,5 +49,5 @@ int returnPiece(int value_pin_seletor){
             break;
     }
 
-    return analogRead(SIG);
+    return analogRead(SIG[enable_idx]);
 }
