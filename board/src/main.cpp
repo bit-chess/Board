@@ -8,5 +8,5 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(returnPiece(0));
+  Serial.println(returnPiece(1));
 }
