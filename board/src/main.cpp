@@ -8,5 +8,5 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(analogToRepresentationPiece(returnPiece(0)));
+  Serial.println(returnPiece(0));
 }
