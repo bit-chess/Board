@@ -13,7 +13,14 @@ image_board build_packet(char **board){
     return board_;
 }
 
-void send_board(image_board board){
+void send_board_to_c(image_board board){
+    Serial.write((uint8_t*)&board, sizeof(board));
+    Serial.flush();
+
+}
+
+void send_board_to_java(image_board board){
+    Serial.println(sizeof(board));
     Serial.write((uint8_t*)&board, sizeof(board));
     Serial.flush();
 
