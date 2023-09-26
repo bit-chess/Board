@@ -4,7 +4,7 @@
 #define ROOK_WHITE_MIN 1006
 #define KNIGHT_WHITE_MIN 600
 #define BISHOP_WHITE_MIN 725
-#define KING_WHITE_MIN 18
+#define KING_WHITE_MIN 0
 #define QUEEN_WHITE_MIN 150
 #define PAWN_WHITE_MIN 990
 
@@ -19,14 +19,14 @@
 #define KNIGHT_BLACK_MIN 36
 #define BISHOP_BLACK_MIN 680
 #define KING_BLACK_MIN 960
-#define QUEEN_BLACK_MIN 0
+#define QUEEN_BLACK_MIN 470
 #define PAWN_BLACK_MIN 900
 
 #define ROOK_BLACK_MAX 550
 #define KNIGHT_BLACK_MAX 70
 #define BISHOP_BLACK_MAX 720
 #define KING_BLACK_MAX 989
-#define QUEEN_BLACK_MAX 17
+#define QUEEN_BLACK_MAX 499
 #define PAWN_BLACK_MAX 950
 
 char analogToRepresentationPiece(int analog_value_piece);
