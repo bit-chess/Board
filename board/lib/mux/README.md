@@ -1,6 +1,6 @@
 # mux
 
-Tem como objetivo fazer a leitura das 64 casas do tabuleiro em uma única saida
+Decodificador do tabuleiro baseado em multiplexadores. Tem como objetivo fazer a leitura das 64 casas do tabuleiro em uma única saida
 
 ## hardware
 O sistema compõe 4 mux 16:4 e cada mux realiza a leitura de duas linhas.
@@ -23,7 +23,7 @@ const int seletor[][] = {{}}; //Seletores. Notação: LITTLE ENDIAN
 - Conjuntos de seletores.
 
 ```cpp
-const int SIG; //Pino de leitura analógica
+const int SIG[]; //Conjunto de pinos de leitura analógica
 ```
 
 - SIG.
@@ -32,7 +32,7 @@ const int SIG; //Pino de leitura analógica
 void buildSystem(void);
 ```
 
-- Monta o sistema MUX.
+- Monta o sistema de decodificação.
 
 ```cpp
 int returnPiece(int value_pin_seletor);
@@ -54,4 +54,4 @@ char analogToRepresentationPiece(int analog_value_piece)
 char **updateImageBoard(void);
 ```
 
-- Atualiza e retorna a Imagem do tabuleiro.
+- Atualiza e retorna a Imagem do tabuleiro. Note que retorna uma matriz de char e não a `struct image_board`.
