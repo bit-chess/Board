@@ -13,7 +13,7 @@ O sistema apresenta os seguintes componentes:
 O sistema é dividido em duas partes:
 
 ### Leitura do Tabuleiro
-A leitura é reaizada pelo conjunto de MUX e as entradas são convertidas de valores analógicos para a representação em BitBoard.
+A leitura é reaizada pelo conjunto de MUX e as entradas são convertidas de valores analógicos para a representação em _char_.
 
 ### Comunicação
 Atualmente existe uma comunicação serial entre a interface(que será integrada à I.A.) e o Arduino Mega que faz parte do tabuleiro inteligente.
