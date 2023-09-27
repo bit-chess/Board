@@ -7,7 +7,7 @@ O sistema apresenta os seguintes componentes:
 - (x1) Arduino Mega
 - (x1) ESP32;
 - (x4) MUX CD74HC4067;
-- (x1) Tabuleiro de Madeira;
+- (x32) Peças baseadas em divisores de tensão.
 
 ## Sofware
 O sistema é dividido em duas partes:
