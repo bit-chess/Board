@@ -1,3 +1,4 @@
 {
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "cmake.sourceDirectory": "/home/lypess/Documentos/Board/board/.pio/libdeps/megaatmega2560/Unity"
 }

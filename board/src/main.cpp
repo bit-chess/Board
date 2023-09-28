@@ -6,13 +6,21 @@
 
 void setup() {
   Serial.begin(115200);
-  buildSystem();
-  pinMode(13, OUTPUT);
-  pinMode(7, INPUT_PULLUP); //switch for which high level system
+
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(13, !digitalRead(13));
-  if(!digitalRead(7)) send_board_to_c(updateImageBoard(2));
-  else send_board_to_java(updateImageBoard(2));
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+
+  delay(50);
+
+  Serial.print("Read data C0 from MUX: ");
+  Serial.println(analogRead(A5));
 }
